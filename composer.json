@@ -14,7 +14,7 @@
         "lavary/laravel-menu": "^1.6"
     },
     "autoload": {
-        "psr-r": {
+        "psr-4": {
             "ArtisanCMS\\CMS\\": "src/"
         }
     }
