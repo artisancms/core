@@ -15,7 +15,7 @@ class CMSServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/artisancms.php' => config_path('artisancms.php'),
-        ]);
+        ], 'config');
     }
 
     /**
