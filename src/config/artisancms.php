@@ -15,6 +15,8 @@ return [
     'site' => [
         'name' => 'ArtisanCMS',
         'description' => 'A Laravel based CMS',
+        'logo' => '',
+        'url' => env('APP_URL'),
     ],
 
     /*
@@ -33,6 +35,6 @@ return [
         'facebook' => '',
         'twitter' => 'https://twitter.com/artisancms',
         'google' => '',
-        
+
     ]
 ];

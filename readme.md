@@ -14,3 +14,19 @@ Create new install with `studio new name` where name is the project (or folder) 
 Add the following to your app.php file in the providers array:
 
 `ArtisanCMS\CMS\Providers\CMSServiceProvider::class,`
+
+#### Publish Config
+
+Listing this now, but ideally this will be a composer script to run after an install command. Although, this only works after the Service Provider is registered. So might have to manually do it, or somehow update the Providers array.
+
+`php artisan vendor:publish`
+
+#### Update the .env
+
+###### APP_URL
+
+In the .env file, make sure you update the `APP_URL` to reflect the environment you are currently in. This means if you are working locally you may have something like `APP_URL=http://artisancms.dev`, but on production you would probably have `APP_URL=http://artisancms.org`.
+
+###### DB Credentials
+
+Also, update the DB credentials to reflect the environment you are in.
