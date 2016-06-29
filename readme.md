@@ -9,7 +9,11 @@ Once that is installed, you will need to source your terminal window. (Close it 
 
 Create new install with `studio new name` where name is the project (or folder) you want ArtisanCMS installed into.
 
+Then `cd` into directory and run `studio install` to finish the installation process.
+
 #### Service Provider
+
+> If you use `studio install` above, you do not need to add this manually.
 
 Add the following to your app.php file in the providers array:
 
