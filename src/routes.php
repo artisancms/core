@@ -1,5 +1,12 @@
 <?php
 
-Route::get('admin', function () {
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('admin', function () {
+        return view('admin::pages.examples.login');
+    });
+});
+
+
+Route::get('login', function () {
     return view('admin::pages.examples.login');
 });
