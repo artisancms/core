@@ -8,5 +8,5 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 Route::get('login', function () {
-    return view('admin::pages.examples.login');
+    return view(config('artisancms.views.login'));
 });

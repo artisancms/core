@@ -48,5 +48,9 @@ return [
         'twitter' => 'https://twitter.com/artisancms',
         'google' => '',
 
+    ],
+
+    'views' => [
+        'login' => 'admin::pages.examples.login'
     ]
 ];
