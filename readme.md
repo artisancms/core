@@ -34,3 +34,5 @@ In the .env file, make sure you update the `APP_URL` to reflect the environment 
 ###### DB Credentials
 
 Also, update the DB credentials to reflect the environment you are in.
+
+testing dev-master
