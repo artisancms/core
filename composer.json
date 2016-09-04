@@ -12,7 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "lavary/laravel-menu": "^1.6",
-        "ahuggins/utilities": "^0.1.7"
+        "ahuggins/utilities": "^0.1.7",
+        "artisancms/admin-views": "^0.0.2"
     },
     "autoload": {
         "psr-4": {
