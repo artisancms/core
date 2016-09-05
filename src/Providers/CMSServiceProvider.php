@@ -20,6 +20,8 @@ class CMSServiceProvider extends ServiceProvider
         if (! $this->app->routesAreCached()) {
             require __DIR__.'/../routes.php';
         }
+
+        require __DIR__ . '/../menu.php';
     }
 
     /**
