@@ -1,7 +1,6 @@
 {
     "name": "artisancms/core",
     "description": "The base package for ArtisanCMS",
-    "type": "project",
     "license": "MIT",
     "authors": [
         {
