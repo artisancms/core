@@ -13,8 +13,7 @@
     "require": {
         "lavary/laravel-menu": "^1.6",
         "ahuggins/utilities": "^0.1.7",
-        "artisancms/admin-views": "^0.0.9",
-        "teepluss/theme": "^2.0.5"
+        "artisancms/admin-views": "^0.0.9"
     },
     "autoload": {
         "psr-4": {
