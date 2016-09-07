@@ -18,6 +18,9 @@
     "autoload": {
         "psr-4": {
             "ArtisanCMS\\CMS\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     }
 }
