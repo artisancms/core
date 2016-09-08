@@ -1,0 +1,12 @@
+{
+    "name": "artisancms/clean-theme",
+    "description": "Sample Theme for use with ArtisanCMS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew huggins",
+            "email": "andrewhuggins@gmail.com"
+        }
+    ],
+    "require": {}
+}
