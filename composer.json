@@ -13,7 +13,8 @@
         "lavary/laravel-menu": "^1.6",
         "ahuggins/utilities": "^0.1.7",
         "artisancms/admin-views": "^0.0.9",
-        "artisancms/clean-theme": "dev-master"
+        "artisancms/clean-theme": "dev-master",
+        "artisancms/blog": "dev-master"
     },
     "autoload": {
         "psr-4": {
