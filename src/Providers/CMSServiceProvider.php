@@ -24,7 +24,7 @@ class CMSServiceProvider extends ServiceProvider
         require __DIR__ . '/../menu.php';
 
         $this->publishes([
-            __DIR__ . '/../themes' => base_path()
+            __DIR__ . '/../themes' => base_path('themes')
         ], 'themes');
     }
 
