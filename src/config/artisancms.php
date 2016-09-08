@@ -43,11 +43,8 @@ return [
     */
 
     'social' => [
-
-        'facebook' => '',
         'twitter' => 'https://twitter.com/artisancms',
-        'google' => '',
-
+        'github' => 'https://github.com/artisancms',
     ],
 
     'theme' => theme('clean-blog'),
