@@ -47,7 +47,7 @@ return [
         'github' => 'https://github.com/artisancms',
     ],
 
-    'theme' => theme('clean-blog'),
+    'theme' => theme('clean-theme'),
 
     'views' => [
         'login' => 'admin::pages.examples.login'
