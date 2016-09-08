@@ -8,7 +8,6 @@
             "email": "andrewhuggins@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "lavary/laravel-menu": "^1.6",
         "ahuggins/utilities": "^0.1.7",
