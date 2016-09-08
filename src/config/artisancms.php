@@ -50,6 +50,8 @@ return [
 
     ],
 
+    'theme' => theme('clean-blog'),
+
     'views' => [
         'login' => 'admin::pages.examples.login'
     ]

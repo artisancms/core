@@ -6,3 +6,10 @@ if (! function_exists('theme')) {
         return base_path('themes/' . $folder);
     }
 }
+
+if (! function_exists('cms')) {
+    function cms($key)
+    {
+        return config('artisancms.' . $key);
+    }
+}
