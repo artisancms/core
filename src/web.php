@@ -12,23 +12,19 @@
 */
 
 Route::get('/', function () {
-    $theme = new ArtisanCMS\Theme\Theme();
-    return $theme->view('blog');
+    return view('theme::blog');
 });
 
 Route::get('post', function () {
-    $theme = new ArtisanCMS\Theme\Theme();
-    return $theme->view('post');
+    return view('theme::post');
 });
 
 Route::get('about', function () {
-    $theme = new ArtisanCMS\Theme\Theme();
-    return $theme->view('about');
+    return view('theme::about');
 });
 
 Route::get('contact', function () {
-    $theme = new ArtisanCMS\Theme\Theme();
-    return $theme->view('contact');
+    return view('theme::contact');
 });
 
 Route::get('/home', 'HomeController@index');
