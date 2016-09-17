@@ -14,7 +14,7 @@
         "ahuggins/utilities": "^0.1.7",
         "artisancms/admin-views": "^0.0.12",
         "artisancms/blog": "^0.0.9",
-        "artisancms/theme": "^0.0.1"
+        "artisancms/theme": "^0.0.2"
     },
     "autoload": {
         "psr-4": {
