@@ -2,6 +2,7 @@
 
 namespace ArtisanCMS\CMS\Providers;
 
+use View;
 use Illuminate\Support\ServiceProvider;
 
 class CMSServiceProvider extends ServiceProvider
@@ -13,24 +14,15 @@ class CMSServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/artisancms.php' => config_path('artisancms.php'),
-        ], 'config');
-
-        if (! $this->app->routesAreCached()) {
-            require __DIR__.'/../routes.php';
-        }
-
-        $this->publishes([
-            __DIR__.'/../web.php' => base_path('routes/web.php')
-        ], 'cms-routes');
+        View::addNamespace("theme", cms('theme'));
 
         require __DIR__ . '/../menu.php';
 
-        $this->publishes([
-            __DIR__ . '/../themes' => base_path('themes')
-        ], 'themes');
+        $this->publishesConfig();
 
+        $this->publishesRoutes();
+
+        $this->publishesThemeFolder();
     }
 
     /**
@@ -41,5 +33,30 @@ class CMSServiceProvider extends ServiceProvider
     public function register()
     {
         require __DIR__ . '/../helpers.php';
+    }
+
+    public function publishesConfig()
+    {
+        $this->publishes([
+            __DIR__.'/../config/artisancms.php' => config_path('artisancms.php'),
+        ], 'config');
+    }
+
+    public function publishesRoutes()
+    {
+        if (! $this->app->routesAreCached()) {
+            require __DIR__.'/../routes.php';
+        }
+
+        $this->publishes([
+            __DIR__.'/../web.php' => base_path('routes/web.php')
+        ], 'cms-routes');
+    }
+
+    public function publishesThemeFolder()
+    {
+        $this->publishes([
+            __DIR__ . '/../themes' => base_path('themes')
+        ], 'themes');
     }
 }
