@@ -1,12 +1,15 @@
 <?php
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('admin', function () {
-        return view('admin::pages.examples.login');
+Route::group(['middleware' => ['web', 'auth']], function () {
+
+    Route::get('dashboard', function () {
+        return view('admin::pages.examples.blank');
     });
+
 });
 
-
-Route::get('login', function () {
-    return view(config('artisancms.views.login'));
+Route::group(['middleware' => 'web'], function () {
+    Route::get('login', 'ArtisanCMS\CMS\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
+    Route::post('login', 'ArtisanCMS\CMS\Http\Controllers\Auth\LoginController@login');
+    Route::get('logout', 'ArtisanCMS\CMS\Http\Controllers\Auth\LoginController@logout');
 });
