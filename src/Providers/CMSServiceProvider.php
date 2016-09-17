@@ -22,7 +22,7 @@ class CMSServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__.'/../web.php' => base_path('routes')
+            __DIR__.'/../web.php' => base_path('routes/web.php')
         ], 'cms-routes');
 
         require __DIR__ . '/../menu.php';
