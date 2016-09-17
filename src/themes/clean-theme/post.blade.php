@@ -1,6 +1,6 @@
 @extends('theme::layouts.blog')
 
-@section('title', 'Clean Blog - Sample Post')
+@section('title', 'Sample Post | ' . cms('site.name'))
 
 @section('body_classes')
 

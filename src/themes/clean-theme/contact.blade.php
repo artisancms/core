@@ -1,5 +1,7 @@
 @extends('theme::layouts.page')
 
+@section('title', 'Contact | ' . cms('site.name'))
+
 @section('header')
     <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
         <div class="container">
