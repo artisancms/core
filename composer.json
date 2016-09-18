@@ -13,7 +13,7 @@
         "lavary/laravel-menu": "^1.6",
         "ahuggins/utilities": "^0.1.7",
         "artisancms/admin-views": "^0.0.14",
-        "artisancms/blog": "^0.0.12"
+        "artisancms/blog": "^0.0.13"
     },
     "autoload": {
         "psr-4": {
