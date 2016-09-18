@@ -34,7 +34,7 @@
                                     {{ $post->subtitle }}
                                 </h3>
                             </a>
-                            <p class="post-meta">Posted by <a href="{{ URL::to('#') }}">Start Bootstrap</a> on September 24, 2014</p>
+                            <p class="post-meta">Posted by <a href="{{ URL::to('#') }}">{{ $post->author->name }}</a> on {{ $post->publish_at }}</p>
                         </div>
                         <hr>
                     @endforeach
