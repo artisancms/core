@@ -1,6 +1,6 @@
 @extends('theme::layouts.blog')
 
-@section('title', 'Sample Post | ' . cms('site.name'))
+@section('title', $post->title . ' | ' . cms('site.name'))
 
 @section('body_classes')
 
@@ -14,7 +14,7 @@
                         <h2 class="subheading">
                             {{ $post->subtitle }}
                         </h2>
-                        <span class="meta">Posted by <a href="{{ URL::to('#') }}">Start Bootstrap</a> on August 24, 2014</span>
+                        <span class="meta">Posted by <a href="{{ URL::to('#') }}">{{ $post->author->name }}</a> on {{ $post->publish_at->format('F d, Y') }}</span>
                     </div>
                 </div>
             </div>
