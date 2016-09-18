@@ -8,12 +8,12 @@
             "email": "andrewhuggins@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "@dev",
     "require": {
         "lavary/laravel-menu": "^1.6",
         "ahuggins/utilities": "^0.1.7",
-        "artisancms/admin-views": "^0.0.15",
-        "artisancms/blog": "^0.0.14"
+        "artisancms/admin-views": "dev-master",
+        "artisancms/blog": "dev-master"
     },
     "autoload": {
         "psr-4": {
