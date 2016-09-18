@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('theme::blog');
-});
+Route::get('/', cms('routes.root'));
 
 Route::get('post', function () {
     return view('theme::post');

@@ -2,6 +2,8 @@
 
 return [
 
+    'theme' => theme('clean-theme'),
+
     /*
     |--------------------------------------------------------------------------
     | Basic Site Information
@@ -17,6 +19,10 @@ return [
         'description' => 'A Laravel based CMS',
         'logo' => '',
         'url' => env('APP_URL'),
+    ],
+
+    'routes' => [
+        'root' => '\ArtisanCMS\Blog\Http\Controllers\BlogController@index',
     ],
 
     /*
@@ -46,8 +52,6 @@ return [
         'twitter' => 'https://twitter.com/artisancms',
         'github' => 'https://github.com/artisancms',
     ],
-
-    'theme' => theme('clean-theme'),
 
     'views' => [
         'login' => 'admin::pages.examples.login'

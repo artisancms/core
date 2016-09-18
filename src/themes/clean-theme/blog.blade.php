@@ -38,7 +38,7 @@
                     <hr>
                 @endforeach
                 
-                {{ $posts->simplePaginate() }}
+                {{ $posts->links() }}
                 <ul class="pager">
                     <li class="next">
                         <a href="{{ URL::to('#') }}">Older Posts →</a>
