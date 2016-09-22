@@ -30,11 +30,14 @@
                                 <h2 class="post-title">
                                     {{ $post->title }}
                                 </h2>
-                                <h3 class="post-subtitle">
-                                    {{ $post->subtitle }}
-                                </h3>
+                                @if ($post->subtitle)
+                                    <h3 class="post-subtitle">
+                                        {{ $post->subtitle }}
+                                    </h3>
+                                @endif
                             </a>
-                            <p class="post-meta">Posted by <a href="{{ URL::to('#') }}">{{ $post->author->name }}</a> on {{ $post->publish_at }}</p>
+                            <p>{{ $post->teaser }}</p>
+                            <p class="post-meta">Posted by <a href="{{ URL::to('#') }}">{{ $post->author->name }}</a> on {{ $post->publishDate() }}</p>
                         </div>
                         <hr>
                     @endforeach
