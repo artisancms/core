@@ -14,7 +14,7 @@
                         <h2 class="subheading">
                             {{ $post->subtitle }}
                         </h2>
-                        <span class="meta">Posted by <a href="{{ URL::to('#') }}">{{ $post->author->name }}</a> on {{ $post->publish_at }}</span>
+                        <span class="meta">Posted by <a href="{{ URL::to('#') }}">{{ $post->author->name }}</a> on {{ $post->publishDate() }}</span>
                     </div>
                 </div>
             </div>
