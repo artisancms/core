@@ -23,6 +23,8 @@ class CMSServiceProvider extends ServiceProvider
         $this->publishesRoutes();
 
         $this->publishesThemeFolder();
+
+        $this->publishesAssets();
     }
 
     /**
@@ -58,5 +60,12 @@ class CMSServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../themes' => base_path('themes')
         ], 'themes');
+    }
+
+    public function publishesAssets()
+    {
+        $this->publishes([
+            __DIR__ . '/../public/theme/clean-theme' => public_path('theme/clean-theme')
+        ], 'assets');
     }
 }
