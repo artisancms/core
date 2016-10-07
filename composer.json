@@ -14,7 +14,8 @@
         "ahuggins/utilities": "^0.1.7",
         "artisancms/admin-views": "0.0.*",
         "artisancms/blog": "0.0.*",
-        "laravelcollective/html": "^5.3"
+        "laravelcollective/html": "^5.3",
+        "arrilot/laravel-widgets": "3.6.1"
     },
     "autoload": {
         "psr-4": {
