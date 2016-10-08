@@ -65,7 +65,7 @@ class CMSServiceProvider extends ServiceProvider
     public function publishesAssets()
     {
         $this->publishes([
-            __DIR__ . '/../public/theme/clean-theme' => public_path('theme/clean-theme')
+            __DIR__ . '/../public' => public_path()
         ], 'assets');
     }
 }
