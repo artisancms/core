@@ -15,7 +15,7 @@
         "artisancms/admin-views": "0.0.*",
         "artisancms/blog": "0.0.*",
         "laravelcollective/html": "^5.3",
-        "arrilot/laravel-widgets": "3.6.1"
+        "artisancms/widgets": "3.6.2"
     },
     "autoload": {
         "psr-4": {
