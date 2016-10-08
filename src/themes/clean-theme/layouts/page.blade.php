@@ -12,10 +12,10 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ URL::to('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('/theme/clean-theme/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ URL::to('css/clean-blog.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('/theme/clean-theme/css/clean-blog.min.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -44,13 +44,13 @@
 
     @include('theme::partials.footer')
     <!-- jQuery -->
-    <script src="{{ URL::to('js/jquery.js') }}"></script>
+    <script src="{{ URL::to('/theme/clean-theme/js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ URL::to('js/bootstrap.min.js') }}"></script>
+    <script src="{{ URL::to('/theme/clean-theme/js/bootstrap.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="{{ URL::to('js/clean-blog.min.js') }}"></script>
+    <script src="{{ URL::to('/theme/clean-theme/js/clean-blog.min.js') }}"></script>
 
 @yield('scripts')
 </body>

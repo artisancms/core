@@ -33,9 +33,9 @@
 @stop
 
 @section('styles')
-    <link rel="stylesheet" type="text/css" href="{{ url('theme/clean-theme/css/prism.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('/theme/clean-theme/css/prism.css') }}">
 @stop
 
 @section('scripts')
-    <script src="{{ url('theme/clean-theme/js/prism.js') }}"></script>
+    <script src="{{ url('/theme/clean-theme/js/prism.js') }}"></script>
 @stop
