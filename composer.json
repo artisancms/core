@@ -15,7 +15,8 @@
         "artisancms/admin-views": "0.0.*",
         "artisancms/blog": "0.0.*",
         "laravelcollective/html": "^5.3",
-        "artisancms/widgets": "3.6.2"
+        "artisancms/widgets": "3.6.2",
+        "plank/laravel-mediable": "^2.3"
     },
     "autoload": {
         "psr-4": {
