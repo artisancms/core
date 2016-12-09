@@ -59,3 +59,4 @@ In the .env file, make sure you update the `APP_URL` to reflect the environment 
 
 After install completes successfully, there should be a folder `themes` in the root directory. Create a theme folder in here, keep the name lowercase. This is where all your theme blade files will go. Then you simply need to update the `artisancms.php` file in the config directory. Update the `theme` key with the name of your new theme. Then make sure that you have the correct files created for the add-ons you have installed.
 
+#### Need to Document more
